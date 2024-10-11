@@ -8,12 +8,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
 }
 
 header {
     background-color: #333;
-    color: #fff;
     padding: 1rem 0;
     text-align: center;
 }
@@ -22,54 +20,8 @@ header h1 {
     margin: 0;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
 section {
     padding: 20px 0;
-}
-
-.container {
-    padding: 20px 20px;
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Responsive width adjustments */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 10px;
-    }
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
-.portfolio-item {
-    margin-bottom: 15px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 30px;
 }
 
 /* Glow div hover effect */
@@ -103,28 +55,35 @@ footer {
     }
 }
 
-/* Responsive text adjustments */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-    }
+/* Set background for the body and sections */
+body, section {
+    background-color: #788E9A; /* Matches the overall page background */
 }
 
-@media (max-width: 480px) {
-    h2 {
-        font-size: 1.2rem;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
+.ui.segment {
+    background-color: transparent !important; /* Make Semantic UI segments transparent */
 }
+
+
+
+a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
