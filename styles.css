@@ -87,3 +87,21 @@ a:active {
   text-decoration: underline;
 }
 
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: #333; /* Default color */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* LinkedIn blue for LinkedIn */
+}
+
+.social-icons a:last-child:hover {
+    color: #333; /* GitHub black for GitHub */
+}
