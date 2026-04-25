@@ -1,0 +1,52 @@
+data:
+  path: AIMMS_MOPTA_2026/AIMMS-MOPTA Interfor data.xlsx
+  sheets:
+    locations: Locations
+    shipments: Shipments
+    carriers: Carriers
+    lanes: Lanes
+    difficult_lanes: Difficult Lanes
+constraints:
+  max_miles_per_day: 450.0
+  max_deadhead_fraction: 0.5
+  min_weekly_earnings: 4000.0
+  max_final_dist_from_home: 100.0
+  min_consecutive_days_off: 2
+  max_working_days: 5
+ga:
+  population_size: 1000
+  max_generations: 300
+  elite_size: 4
+  crossover_rate: 0.8
+  mutation_rate_gene: 0.04
+  tournament_size: 4
+  stagnation_limit: 50
+  max_wall_seconds: 3600
+  seed: 42
+  eval_workers: 0
+  order_subset: null
+  elite_fraction: 0.1
+penalties:
+  deadhead_fraction: 2000.0
+  final_dist_from_home: 5.0
+  min_weekly_earnings_shortfall: 3.0
+  total_miles_over_5days: 3.0
+education:
+  enabled: true
+  workers: 0
+  every_n_generations: 2
+  p_edu: 0.12
+  max_ls_iters: 2
+  home_penalty_per_mile: 4.0
+  max_home_dist: 100.0
+  or_opt_1: true
+  two_opt: true
+  or_opt_2: true
+output:
+  directory: output
+  solution_json: solution.json
+  summary_csv: solution_summary.csv
+  infeasible_debug_json: last_infeasible_debug.json
+  log_level: INFO
+  run_archive: true
+  runs_subdirectory: runs

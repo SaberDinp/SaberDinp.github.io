@@ -1,0 +1,11 @@
+ga:
+  seed: 0
+  max_generations: 50
+  population_size: 30
+  mutation_rate_gene: 0.06
+  elite_fraction: 0.004
+constraints: {}
+penalties: {}
+data: {}
+output: {}
+education: {}

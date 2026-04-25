@@ -1,0 +1,114 @@
+16:33:36 [INFO] solver.__main__: Config hash: c9a7e463fef5
+16:33:36 [INFO] solver.__main__: Data path: AIMMS_MOPTA_2026/AIMMS-MOPTA Interfor data.xlsx
+16:33:36 [INFO] solver.__main__: Run archive: /Users/saberdinpazhouh/Downloads/pycharm_projects/George_mopta_heuristic/output/runs/20260422T213336Z_c9a7e463
+16:33:36 [INFO] solver.data: Loading workbook: AIMMS_MOPTA_2026/AIMMS-MOPTA Interfor data.xlsx
+16:33:37 [INFO] solver.data: Loaded 218 locations
+16:33:37 [INFO] solver.data: Loaded 20 trucks
+16:33:37 [INFO] solver.data: Loaded 1000 orders across due dates: ['2026-01-17', '2026-01-24']
+16:33:37 [INFO] solver.data: Loaded 47524 lane pairs
+16:33:37 [INFO] solver.data: All order O/D pairs have lane entries.
+16:33:37 [INFO] solver.data: Loaded 61 difficult lane records
+16:33:37 [INFO] solver.__main__: Data loaded in 1.48s
+============================================================
+DATA VALIDATION REPORT
+============================================================
+Locations  : 218
+Trucks     : 20
+Orders     : 1000
+  Week 2026-01-17 : 450 orders
+  Week 2026-01-24 : 550 orders
+Lane pairs : 47524
+Diff. lanes: 61
+Lane cost  : min=$97.90  max=$5391.25  mean=$1622.04
+Lane miles : min=0.0  max=1914.4  mean=525.5
+All truck homes are in Locations table. OK
+Cost matrix NaNs: 0 / 47524
+============================================================
+16:33:37 [INFO] solver.ga: ============================================================
+16:33:37 [INFO] solver.ga: Solving week: 2026-01-17  (450 orders)
+16:33:37 [INFO] solver.ga: ============================================================
+16:33:37 [INFO] solver.ga: Baselines | T (all-tender)=603464.74 | G (greedy-difficult)=670309.77
+16:33:41 [INFO] solver.ga: GA start | orders=450 trucks=20 pop=1000 gens=300 education=on | eval_workers=10 edu_workers=10 | init best=603464.74
+16:33:54 [INFO] solver.ga: Gen  10 | best=599930.09 | stagnation=0 | elapsed=13.3s
+16:33:59 [INFO] solver.ga: Gen  20 | best=599930.09 | stagnation=10 | elapsed=17.8s
+16:34:04 [INFO] solver.ga: Gen  30 | best=599930.09 | stagnation=20 | elapsed=22.5s
+16:34:08 [INFO] solver.ga: Gen  40 | best=598951.69 | stagnation=0 | elapsed=27.1s
+16:34:13 [INFO] solver.ga: Gen  50 | best=598637.82 | stagnation=0 | elapsed=31.6s
+16:34:17 [INFO] solver.ga: Gen  60 | best=598273.37 | stagnation=0 | elapsed=36.2s
+16:34:22 [INFO] solver.ga: Gen  70 | best=595600.24 | stagnation=0 | elapsed=40.9s
+16:34:27 [INFO] solver.ga: Gen  80 | best=595600.24 | stagnation=10 | elapsed=45.5s
+16:34:31 [INFO] solver.ga: Gen  90 | best=595600.24 | stagnation=20 | elapsed=50.2s
+16:34:36 [INFO] solver.ga: Gen 100 | best=595597.44 | stagnation=0 | elapsed=55.0s
+16:34:41 [INFO] solver.ga: Gen 110 | best=595312.37 | stagnation=0 | elapsed=59.6s
+16:34:45 [INFO] solver.ga: Gen 120 | best=595272.47 | stagnation=0 | elapsed=64.3s
+16:34:50 [INFO] solver.ga: Gen 130 | best=595163.97 | stagnation=0 | elapsed=69.1s
+16:34:55 [INFO] solver.ga: Gen 140 | best=595163.64 | stagnation=0 | elapsed=74.0s
+16:35:00 [INFO] solver.ga: Gen 150 | best=594838.67 | stagnation=0 | elapsed=78.8s
+16:35:05 [INFO] solver.ga: Gen 160 | best=593676.29 | stagnation=0 | elapsed=83.6s
+16:35:10 [INFO] solver.ga: Gen 170 | best=593676.29 | stagnation=10 | elapsed=88.5s
+16:35:14 [INFO] solver.ga: Gen 180 | best=593676.29 | stagnation=20 | elapsed=93.4s
+16:35:19 [INFO] solver.ga: Gen 190 | best=593676.29 | stagnation=30 | elapsed=98.2s
+16:35:24 [INFO] solver.ga: Gen 200 | best=593676.29 | stagnation=40 | elapsed=103.0s
+16:35:29 [INFO] solver.ga: Gen 210 | best=593324.74 | stagnation=0 | elapsed=107.8s
+16:35:34 [INFO] solver.ga: Gen 220 | best=593114.39 | stagnation=0 | elapsed=112.6s
+16:35:38 [INFO] solver.ga: Gen 230 | best=593114.39 | stagnation=10 | elapsed=117.4s
+16:35:43 [INFO] solver.ga: Gen 240 | best=593114.39 | stagnation=20 | elapsed=122.4s
+16:35:48 [INFO] solver.ga: Gen 250 | best=593114.39 | stagnation=30 | elapsed=127.4s
+16:35:53 [INFO] solver.ga: Gen 260 | best=593114.39 | stagnation=40 | elapsed=132.2s
+16:35:58 [INFO] solver.ga: Gen 270 | best=593114.39 | stagnation=50 | elapsed=137.1s
+16:35:58 [INFO] solver.ga: Stagnation limit reached at generation 270
+16:35:58 [INFO] solver.ga: GA done | best fitness=593114.39 | generations=271 | time=137.1s
+16:35:58 [INFO] solver.ga: Baselines vs GA | T=603464.74 | G=670309.77 | C=593114.39 (GA best)
+16:35:58 [INFO] solver.ga: ============================================================
+16:35:58 [INFO] solver.ga: Solving week: 2026-01-24  (550 orders)
+16:35:58 [INFO] solver.ga: ============================================================
+16:35:58 [INFO] solver.ga: Baselines | T (all-tender)=768344.81 | G (greedy-difficult)=855048.30
+16:36:02 [INFO] solver.ga: GA start | orders=550 trucks=20 pop=1000 gens=300 education=on | eval_workers=10 edu_workers=10 | init best=768344.81
+16:36:19 [INFO] solver.ga: Gen  10 | best=764905.94 | stagnation=0 | elapsed=17.0s
+16:36:24 [INFO] solver.ga: Gen  20 | best=764903.61 | stagnation=0 | elapsed=22.2s
+16:36:30 [INFO] solver.ga: Gen  30 | best=763084.59 | stagnation=0 | elapsed=27.5s
+16:36:35 [INFO] solver.ga: Gen  40 | best=763084.59 | stagnation=10 | elapsed=32.7s
+16:36:40 [INFO] solver.ga: Gen  50 | best=761728.19 | stagnation=0 | elapsed=38.0s
+16:36:46 [INFO] solver.ga: Gen  60 | best=761594.19 | stagnation=0 | elapsed=43.6s
+16:36:51 [INFO] solver.ga: Gen  70 | best=760691.21 | stagnation=0 | elapsed=48.9s
+16:36:57 [INFO] solver.ga: Gen  80 | best=760691.21 | stagnation=10 | elapsed=54.7s
+16:37:02 [INFO] solver.ga: Gen  90 | best=758523.84 | stagnation=0 | elapsed=60.1s
+16:37:08 [INFO] solver.ga: Gen 100 | best=758523.84 | stagnation=10 | elapsed=65.5s
+16:37:13 [INFO] solver.ga: Gen 110 | best=758523.84 | stagnation=20 | elapsed=70.9s
+16:37:19 [INFO] solver.ga: Gen 120 | best=758523.84 | stagnation=30 | elapsed=76.4s
+16:37:24 [INFO] solver.ga: Gen 130 | best=758523.84 | stagnation=40 | elapsed=82.3s
+16:37:30 [INFO] solver.ga: Gen 140 | best=758523.84 | stagnation=50 | elapsed=87.9s
+16:37:30 [INFO] solver.ga: Stagnation limit reached at generation 140
+16:37:30 [INFO] solver.ga: GA done | best fitness=758523.84 | generations=141 | time=87.9s
+16:37:30 [INFO] solver.ga: Baselines vs GA | T=768344.81 | G=855048.30 | C=758523.84 (GA best)
+16:37:30 [INFO] solver.__main__: Total solve time: 232.9 seconds
+
+======================================================================
+SOLUTION SUMMARY
+======================================================================
+
+Week: 2026-01-17
+  Orders total     : 450
+  Dedicated orders : 14  (6 trucks active)
+  Tendered orders  : 436
+  Dedicated cost   : $   29,249.83
+  Tender cost      : $  563,864.57
+  Week total       : $  593,114.39
+  Feasible         : True
+
+Week: 2026-01-24
+  Orders total     : 550
+  Dedicated orders : 12  (6 trucks active)
+  Tendered orders  : 538
+  Dedicated cost   : $   26,693.97
+  Tender cost      : $  731,829.86
+  Week total       : $  758,523.84
+  Feasible         : True
+
+----------------------------------------------------------------------
+  GRAND TOTAL (all weeks): $1,351,638.23
+======================================================================
+
+16:37:30 [INFO] solver.output: Wrote output/solution.json
+16:37:30 [INFO] solver.output: Wrote output/solution_summary.csv  (1000 rows)
+16:37:30 [INFO] solver.__main__: Done. Total cost: $1351638.23  Solve time: 232.9s

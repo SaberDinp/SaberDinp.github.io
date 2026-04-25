@@ -1,0 +1,49 @@
+{
+  "run_id": "20260423T024407Z_2d3e377d",
+  "started_at": "2026-04-23T02:44:07.447761+00:00",
+  "finished_at": "2026-04-23T04:39:17.291354+00:00",
+  "exit_code": 0,
+  "cwd": "/Users/saberdinpazhouh/Downloads/pycharm_projects/George_mopta_heuristic",
+  "argv": [
+    "src/solver/__main__.py",
+    "--data",
+    "AIMMS_MOPTA_2026/AIMMS-MOPTA Interfor data.xlsx",
+    "--pop",
+    "1000",
+    "--elite-fraction",
+    "0.1",
+    "--eval-workers",
+    "0",
+    "--edu-workers",
+    "0",
+    "--seed",
+    "42",
+    "--generations",
+    "5000"
+  ],
+  "config_path": "/Users/saberdinpazhouh/Downloads/pycharm_projects/George_mopta_heuristic/configs/default.yaml",
+  "data_path": "/Users/saberdinpazhouh/Downloads/pycharm_projects/George_mopta_heuristic/AIMMS_MOPTA_2026/AIMMS-MOPTA Interfor data.xlsx",
+  "output_dir": "/Users/saberdinpazhouh/Downloads/pycharm_projects/George_mopta_heuristic/output",
+  "run_dir": "/Users/saberdinpazhouh/Downloads/pycharm_projects/George_mopta_heuristic/output/runs/20260423T024407Z_2d3e377d",
+  "config_hash": "2d3e377d0796",
+  "git_rev": "fb4bb6c56c360e586a6a3ede6b2387b8c183691e",
+  "validate_only": false,
+  "explicit_cli_overrides": {
+    "seed": 42,
+    "generations": 5000,
+    "pop": 1000,
+    "elite_fraction": 0.1,
+    "eval_workers": 0,
+    "edu_workers": 0,
+    "data": "AIMMS_MOPTA_2026/AIMMS-MOPTA Interfor data.xlsx",
+    "config": "configs/default.yaml"
+  },
+  "feasible": true,
+  "solution_meta": {
+    "solve_time_seconds": 6907.73,
+    "total_cost_all_weeks": 1336190.53,
+    "config_hash": "2d3e377d0796",
+    "n_weeks": 2,
+    "seed": 42
+  }
+}

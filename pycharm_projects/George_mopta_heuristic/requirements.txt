@@ -1,0 +1,7 @@
+# Python GA solver + tests — install into repo-root .venv (see docs/python-ga-solver.md).
+# Use Python 3.13 only — matches vendored AIMMS starter: AIMMS_MOPTA_2026/pyproject.toml has requires-python = "==3.13.*"
+pandas>=2.0
+openpyxl>=3.1
+numpy>=1.26
+pyyaml>=6.0
+pytest>=8.0
